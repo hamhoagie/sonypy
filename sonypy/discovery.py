@@ -42,7 +42,7 @@ class Discoverer(object):
 
     def _parse_ssdp_response(self, data):
         lines = data.split('\n')
-        assert lines[0] == 'HTTP/1.1 200 OK'
+        #assert lines[0] == 'HTTP/1.1 200 OK'
         headers = {}
         for line in lines[1:]:
             key, val = line.split(': ', 1)
